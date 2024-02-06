@@ -1,0 +1,45 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 224, 228);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 0px;
+    margin-top: 20%;
+}
+
+#buttons {
+    margin-top: 40px;
+}
+
+button {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 30px 50px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+#buttonYes {
+    background-color: rgb(120, 204, 138);
+}
+
+#buttonNo {
+    background-color: rgb(231, 136, 136);
+}
+
+div {
+    text-align: center;
+}
+
+#buttonYes:hover, #buttonNo:hover {
+    transform: scale(1.1);
+}
