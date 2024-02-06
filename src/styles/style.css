@@ -29,7 +29,7 @@ h1 {
 }
 
 #buttons {
-    margin-top: 2vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: row;
 }
@@ -38,7 +38,7 @@ button {
     font-size: 2rem;
     font-style: italic;
     font-weight: bold;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     margin: 0 2vh;
     cursor: pointer;
 }
@@ -49,13 +49,24 @@ button {
 
 #buttonNo {
     background-color: rgb(231, 136, 136);
+    max-width: 50vh;
 }
 
-div {
-    text-align: center;
+#buttonYes,
+#buttonNo {
+    border-radius: 5%;
 }
 
 #buttonYes:hover,
 #buttonNo:hover {
     transform: scale(1.1);
+}
+
+img.gif {
+    width: 40vh;
+    height: auto;
+}
+
+audio {
+    display: none;
 }
