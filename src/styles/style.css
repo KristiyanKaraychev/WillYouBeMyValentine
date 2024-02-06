@@ -1,5 +1,6 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: 40px;
     margin: 0;
     padding: 0;
@@ -40,6 +41,7 @@ div {
     text-align: center;
 }
 
-#buttonYes:hover, #buttonNo:hover {
+#buttonYes:hover,
+#buttonNo:hover {
     transform: scale(1.1);
 }
