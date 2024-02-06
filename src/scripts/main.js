@@ -39,14 +39,3 @@ document.getElementById("buttonNo").addEventListener("click", function () {
     // changing the font size of the button to the new value; important to add the unit of measurement at the end (in our case "px");
     document.getElementById("buttonYes").style.fontSize = buttonSizeTemp + "px";
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("audio").volume = 0.2;
-    console.log("test1");
-});
-
-audio.addEventListener("ended", function () {
-    this.currentTime = 0; // Reset audio to the beginning
-    this.play(); // Play audio again
-    console.log("test2");
-});
