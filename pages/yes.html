@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YES!</title>
-</head>
-<body>
-    <header>
-        
-    </header>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YES!</title>
+        <link rel="stylesheet" href="../src/styles/style.css" />
+    </head>
+    <body>
+        <header>
+            <div id="toothless-gifs">
+                <img src="../images/toothless-dancing-toothless.gif" />
+                <img src="../images/toothless-dancing.gif" />
+            </div>
+        </header>
+        <audio controls autoplay id="audio">
+            <source
+                src="../images/toothless-dancing_rT0J7Pn.mp3"
+                type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            var audio = document.getElementById("audio");
+            audio.volume = 0.2;
+        </script>
+    </body>
 </html>

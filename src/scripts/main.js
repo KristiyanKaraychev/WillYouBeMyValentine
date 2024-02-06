@@ -1,5 +1,5 @@
 document.getElementById("buttonYes").addEventListener("click", function () {
-    window.location.href = "/pages/yes.html";
+    window.location.href = "pages/yes.html";
 });
 
 document.getElementById("buttonNo").addEventListener("click", function () {
