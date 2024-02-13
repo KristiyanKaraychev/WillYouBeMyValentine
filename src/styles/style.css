@@ -1,10 +1,10 @@
 body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
     font-size: 40px;
     margin: 0;
     padding: 0;
     background-color: rgb(243, 224, 228);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 header {
@@ -14,6 +14,7 @@ header {
     text-align: center;
     min-height: 100vh;
     font-style: italic;
+    color: rgb(229, 118, 118);
 }
 
 .center-screen {
@@ -36,19 +37,19 @@ h1 {
 
 button {
     font-size: 2rem;
-    font-style: italic;
     font-weight: bold;
     padding: 2rem 2rem;
     margin: 0 2vh;
     cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 
 #buttonYes {
-    background-color: rgb(120, 204, 138);
+    background-color: rgb(108, 213, 131);
 }
 
 #buttonNo {
-    background-color: rgb(231, 136, 136);
+    background-color: rgb(231, 93, 93);
     max-width: 50vh;
 }
 
@@ -69,4 +70,8 @@ img.gif {
 
 audio {
     display: none;
+}
+
+#celebratoryMsg {
+    margin-top: 5vh;
 }

@@ -36,6 +36,6 @@ document.getElementById("buttonNo").addEventListener("click", function () {
         buttonNoTemp.innerText = statement_repeating;
     }
 
-    // changing the font size of the button to the new value; important to add the unit of measurement at the end (in our case "px");
+    // changing the font size of the button to the new value; important to add the unit of measurement at the end (in this case "px");
     document.getElementById("buttonYes").style.fontSize = buttonSizeTemp + "px";
 });
