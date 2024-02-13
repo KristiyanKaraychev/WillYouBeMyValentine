@@ -1,19 +1,21 @@
 let statements_count = 0;
 let statement_repeating = "I will be sad";
 
+// store original button size
+let originalSizeYes = parseFloat(window.getComputedStyle(buttonYes).fontSize);
+let originalSizeNo = parseFloat(window.getComputedStyle(buttonNo).fontSize);
+
+// store original button text
+let originalTextNo = document.getElementById("buttonNo").innerText;
+
 document.addEventListener("DOMContentLoaded", function () {
     let buttonYes = document.getElementById("buttonYes");
     let buttonNo = document.getElementById("buttonNo");
 
-    // store original button size
-    let originalSizeYes = parseFloat(
-        window.getComputedStyle(buttonYes).fontSize
-    );
-    let originalSizeNo = parseFloat(window.getComputedStyle(buttonNo).fontSize);
+    // resets buttons on reloading
+    resetButtons();
 
-    // store original button text
-    let originalTextNo = window.getComputedStyle(buttonNo).innerText;
-
+    // redirect to page "yes"
     buttonYes.addEventListener("click", function () {
         window.location.href = "pages/yes.html";
     });
@@ -54,24 +56,21 @@ document.addEventListener("DOMContentLoaded", function () {
             buttonSizeTemp + "px";
     });
 
-    // resets buttons on reloading
-    resetButtons(originalSizeYes, originalSizeNo, originalTextNo);
-
     // window.addEventListener("pageshow", function (event) {
     //     if (event.persisted) {
-    //         resetButtons(originalSizeYes, originalSizeNo, originalTextNo);
+    //         resetButtons();
     //     }
     // });
 });
 
-function resetButtons(styleYes, styleNo, textNo) {
+function resetButtons() {
     let buttonYes = document.getElementById("buttonYes");
     let buttonNo = document.getElementById("buttonNo");
 
-    buttonYes.style.fontSize = button1 + "px";
-    buttonNo.style.fontSize = button2 + "px";
+    buttonYes.style.fontSize = originalSizeYes + "px";
+    buttonNo.style.fontSize = originalSizeNo + "px";
 
-    buttonNo.innerText = textNo;
+    buttonNo.innerText = originalTextNo;
 
     statements_count = 0;
     statement_repeating = "I will be sad";
