@@ -1,9 +1,23 @@
 let statements_count = 0;
 let statement_repeating = "I will be sad";
 
+// Store the original button size
+let originalSizeYes = parseFloat(
+    window.getComputedStyle(document.getElementById("buttonYes")).fontSize
+);
+let originalSizeNo = parseFloat(
+    window.getComputedStyle(document.getElementById("buttonNo")).fontSize
+);
+
 document.addEventListener("DOMContentLoaded", function () {
     let buttonYes = document.getElementById("buttonYes");
     let buttonNo = document.getElementById("buttonNo");
+
+    // Store the original button size
+    let originalSizeYes = parseFloat(
+        window.getComputedStyle(buttonYes).fontSize
+    );
+    let originalSizeNo = parseFloat(window.getComputedStyle(buttonNo).fontSize);
 
     buttonYes.addEventListener("click", function () {
         window.location.href = "pages/yes.html";
@@ -50,8 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function resetButtons() {
-    buttonYes.style.transform = "scale(1)";
-    buttonNo.style.transform = "scale(1)";
+    let buttonYes = document.getElementById("buttonYes");
+    let buttonNo = document.getElementById("buttonNo");
+
+    buttonYes.style.fontSize = originalSizeYes + "px";
+    buttonNo.style.fontSize = originalSizeYes + "px";
 
     statements_count = 0;
     statement_repeating = "I will be sad";
