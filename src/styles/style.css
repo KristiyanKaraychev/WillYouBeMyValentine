@@ -23,6 +23,8 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 h1 {
@@ -30,7 +32,7 @@ h1 {
 }
 
 #buttons {
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: row;
 }
@@ -74,4 +76,5 @@ audio {
 
 #celebratoryMsg {
     margin-top: 5vh;
+    font-size: 60px;
 }
