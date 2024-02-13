@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function () {
+    let buttonYesTemp = document.getElementById("buttonYes");
+    let buttonNoTemp = document.getElementById("buttonNo");
+
+    buttonYesTemp.style.transform = "scale(1)";
+    buttonNoTemp.style.transform = "scale(1)";
+});
+
 document.getElementById("buttonYes").addEventListener("click", function () {
     window.location.href = "pages/yes.html";
 });
