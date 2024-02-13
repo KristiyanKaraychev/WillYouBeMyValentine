@@ -12,9 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let buttonYes = document.getElementById("buttonYes");
     let buttonNo = document.getElementById("buttonNo");
 
-    // resets buttons on reloading
-    resetButtons();
-
     // redirect to page "yes"
     buttonYes.addEventListener("click", function () {
         window.location.href = "pages/yes.html";
@@ -56,11 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
             buttonSizeTemp + "px";
     });
 
-    // window.addEventListener("pageshow", function (event) {
-    //     if (event.persisted) {
-    //         resetButtons();
-    //     }
-    // });
+    // resets buttons on reloading
+    resetButtons();
+
+    window.addEventListener("pageshow", function (event) {
+        if (event.persisted) {
+            resetButtons();
+        }
+    });
 });
 
 function resetButtons() {
